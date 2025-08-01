@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page Demo</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f7f8;
+      color: #333;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      padding:75px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+
+    }
+
+    /* Main content container */
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Sections inside main */
+    section {
+      margin-bottom: 2rem;
+    }
+
+    /* Columns layout */
+    .columns {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 1 1 300px;
+      background: #e1ecf9;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: inset 0 0 5px #c5d8f4;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #005a99;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .columns {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Our Landing Page</h1>
+</header>
+
+<main>
+  <section>
+    <h2>About Us</h2>
+    <p>We create clean and efficient web projects that help you learn and grow your coding skills. This landing page demo shows you the basics of structuring a webpage using HTML and CSS.</p>
+  </section>
+
+  <section class="columns">
+    <div class="column">
+      <h3>Feature One</h3>
+      <p>This feature demonstrates the use of columns and flexible boxes to arrange content responsively.</p>
+    </div>
+    <div class="column">
+      <h3>Feature Two</h3>
+      <p>Adding padding, colors, and shadows helps to make sections visually distinct and engaging.</p>
+    </div>
+    <div class="column">
+      <h3>Feature Three</h3>
+      <p>Use buttons to encourage user interaction. Styling buttons is important for usability and accessibility.</p>
+      <button class="btn-primary">Learn More</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Your Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
